@@ -11,6 +11,8 @@ namespace BenchmarkTest1
     {
         static void Main(string[] args)
         {
+            //Results are in C:\playground\Benchmark\BenchmarkTest1\BenchmarkTest1\bin\Release\netcoreapp3.1\BenchmarkDotNet.Artifacts\results
+            //Two are indepent tests
             var summary = BenchmarkRunner.Run<PrintLineRunner>();
             var summary2 = BenchmarkRunner.Run<TempRunner>();
         }
